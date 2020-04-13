@@ -132,6 +132,8 @@ class PrivateUserApiTests(TestCase):
         print(self.user.check_password(payload['password']))
 
         self.user.refresh_from_db()
+        #res = self.client.patch(ME_URL, payload)
+
 
         print(self.user.check_password(payload['password']))
 
